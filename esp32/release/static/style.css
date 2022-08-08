@@ -1,0 +1,90 @@
+:root {
+  --clr-primary: rgb(189, 7, 206);
+  --clr-secondary: rgb(156, 22, 78);
+  --clr-secondary-light: rgb(226, 88, 146);
+  --radius: 10px;
+  --transition: all 0.2s ease-in-out;
+  --ff: "Courier New", Courier, monospace;
+}
+
+body {
+  background: rgb(184, 187, 165);
+  font-family: var(--ff);
+}
+
+.home h1 {
+  font-size: 4rem;
+  color: var(--clr-primary);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content-wrapper {
+  color: black;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: not-allowed;
+  display: block;
+  font-size: 1.2rem;
+  background: rgb(148, 139, 139);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+}
+
+.active {
+  cursor: pointer;
+  background: var(--clr-secondary);
+}
+
+.active:hover {
+  transition: var(--transition);
+  background: var(--clr-secondary-light);
+  transform: scale(1.1);
+}
+
+input[type="date"],
+input[type="time"] {
+  font-family: var(--ff);
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1.5rem auto;
+  max-width: 250px;
+}
+
+input[type="number"] {
+  font-family: var(--ff);
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1.5rem auto;
+  max-width: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}

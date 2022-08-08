@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESP Clock</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <section class="home">
+      <div class="content-wrapper">
+        <h1>datetime</h1>
+        <div class="btn-wrapper">
+          <form action="/time" method="post">
+            <input required type="date" name="date" />
+            <input required type="number" name="weekday" placeholder="weekday" min="1" max="7" />
+            <input required type="time" name="time" />
+            <input class="btn active submit-btn" type="submit" value="Submit" />
+          </form>
+          <a class="btn active" href="/">Back</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
